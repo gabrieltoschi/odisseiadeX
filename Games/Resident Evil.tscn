@@ -1,0 +1,75 @@
+[gd_scene load_steps=2 format=1]
+
+[ext_resource path="res://Scripts/Resident Evil.gd" type="Script" id=1]
+
+[node name="Resident Evil" type="Node2D"]
+
+transform/pos = Vector2( 40.7252, 35.0237 )
+script/script = ExtResource( 1 )
+maxPoints = 100
+gameInit = 0
+maxTimes = 4
+timesInit = 0
+increaseByUser = 2.5
+
+[node name="Max" type="Label" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 211.0
+margin/top = 114.0
+margin/right = 269.0
+margin/bottom = 128.0
+text = "Max: 100"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Complete" type="Label" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 211.0
+margin/top = 134.0
+margin/right = 277.0
+margin/bottom = 148.0
+text = "Complete:"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Times" type="Label" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 212.0
+margin/top = 155.0
+margin/right = 280.0
+margin/bottom = 169.0
+text = "Times: 5/8"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Direction" type="Label" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 213.0
+margin/top = 93.0
+margin/right = 279.0
+margin/bottom = 107.0
+text = "Go to UP!"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+

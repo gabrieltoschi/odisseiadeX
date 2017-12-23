@@ -1,0 +1,41 @@
+[gd_scene load_steps=3 format=1]
+
+[ext_resource path="res://Scripts/Doom.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/DOOM/enemy0.png" type="Texture" id=2]
+
+[node name="Doom" type="Node2D"]
+
+script/script = ExtResource( 1 )
+spawnList = [  ]
+
+[node name="Enemy0" type="Sprite" parent="."]
+
+transform/pos = Vector2( 85.523, 186.522 )
+transform/scale = Vector2( 1.3, 1.3 )
+texture = ExtResource( 2 )
+
+[node name="Enemy1" type="Sprite" parent="."]
+
+transform/pos = Vector2( 205.255, 184.893 )
+transform/scale = Vector2( 1.3, 1.3 )
+texture = ExtResource( 2 )
+
+[node name="Enemy2" type="Sprite" parent="."]
+
+transform/pos = Vector2( 312.77, 184.078 )
+transform/scale = Vector2( 1.3, 1.3 )
+texture = ExtResource( 2 )
+
+[node name="Enemy3" type="Sprite" parent="."]
+
+transform/pos = Vector2( 441.462, 187.336 )
+transform/scale = Vector2( 1.3, 1.3 )
+texture = ExtResource( 2 )
+
+[node name="Enemy4" type="Sprite" parent="."]
+
+transform/pos = Vector2( 548.976, 184.078 )
+transform/scale = Vector2( 1.3, 1.3 )
+texture = ExtResource( 2 )
+
+

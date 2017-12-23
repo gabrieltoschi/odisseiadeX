@@ -1,0 +1,97 @@
+[gd_scene load_steps=10 format=1]
+
+[ext_resource path="res://Scripts/Sleep Screen.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/sleep-bg.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/sleep-message.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/sleep-progress.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/sleep-font.TTF" type="DynamicFontData" id=5]
+[ext_resource path="res://Sprites/sleep-messagefail.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/sleep-fail.png" type="Texture" id=7]
+
+[sub_resource type="DynamicFont" id=1]
+
+font/size = 15
+font/use_mipmaps = false
+font/use_filter = false
+font/font = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=2]
+
+font/size = 30
+font/use_mipmaps = false
+font/use_filter = false
+font/font = ExtResource( 5 )
+
+[node name="Sleep Screen" type="Node2D"]
+
+script/script = ExtResource( 1 )
+
+[node name="Background" type="Sprite" parent="."]
+
+transform/pos = Vector2( 400.766, 300.204 )
+transform/scale = Vector2( 1.2661, 1.2661 )
+texture = ExtResource( 2 )
+
+[node name="Message" type="Sprite" parent="."]
+
+transform/pos = Vector2( 282.379, 176.794 )
+texture = ExtResource( 3 )
+
+[node name="Progress" type="Sprite" parent="."]
+
+transform/pos = Vector2( 615.095, 313.073 )
+texture = ExtResource( 4 )
+
+[node name="Label" type="Label" parent="Progress"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 9.0
+margin/top = -19.0
+margin/right = 139.0
+margin/bottom = 43.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "games in\npeace"
+align = 1
+valign = 1
+autowrap = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Points" type="Label" parent="Progress"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = -88.0
+margin/top = -21.0
+margin/right = 16.0
+margin/bottom = 41.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "0"
+align = 1
+valign = 1
+autowrap = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="MessageFail" type="Sprite" parent="."]
+
+visibility/visible = false
+transform/pos = Vector2( 287.29, 175.566 )
+texture = ExtResource( 6 )
+
+[node name="Fail" type="Sprite" parent="."]
+
+visibility/visible = false
+transform/pos = Vector2( 423.569, 454.262 )
+texture = ExtResource( 7 )
+
+
